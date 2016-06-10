@@ -1,0 +1,110 @@
+/*begin main styles*/
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color:#adadad;
+	margin:150px 0 0 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Roboto Slab', serif;
+}
+.container{
+	width:1170px;
+	margin: 0 auto;
+	padding: 0 50px;
+
+}
+.container:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.btn{	
+	text-decoration: none;
+	font-size:14px;
+	line-height:14px;
+	padding: 15px 30px;
+}
+.btn.btn-default{
+	background:#ffe13e;
+	color:#202242;
+	transition: all .5s ease;
+}
+.btn.btn-default:hover{
+	background:#202242;
+	color:#ffe13e;
+}
+/*end main styles*/
+
+/*begin header*/
+.header{
+	width:100%;
+	background: #fff; 
+	position: fixed;
+	top:0;
+	left:0;
+}
+.header .logo{
+	float:left;
+	width:30px;
+	padding: 75px 0 75px 0;
+	background:url(../images/logo.png) left no-repeat;
+}
+.header .text{
+	float:left;
+	color: #202242;
+	line-height: 30px;
+	padding: 60px 0; 
+	margin: 0 20px 0 0;
+	font-size: 30px;
+	text-decoration: none;
+}
+.header .nav{
+	float:left;
+	border-right: 1px solid #ebebeb;
+    height: 147px;
+    margin: 0 50px 0 50px;
+    /* Не можу розібратися з відступами між меню та великою вертикальною лінією*/
+}
+.header .nav li{
+	float:left;
+	list-style: none;
+	margin: 60px 30px 60px 0;
+	line-height:0;
+}
+.header .nav li:last-child{
+	margin-right:53;
+}
+.header .nav li a{
+	font-size:16px;
+	padding:7px 5px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #202242;
+}
+.header .nav li a:hover{
+	color: #ffe13e;
+}
+.header .adress{
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	color:#202242;
+	margin: 35px 0px 3px 0px;
+}
+.header .btn{
+	display: inline-block;
+	margin: 0 20px 0 0;
+	float:left;
+}
+.header .tel{
+	padding: 5.5px 0 5.5px 15px;
+	margin:5px 0 5px 0;
+	float:right;
+	font-size:24px;
+	line-height: 24px;
+	border-left:1px solid #ebebeb;
+}
+
+/*end header*/
