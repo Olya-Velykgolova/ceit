@@ -36,7 +36,7 @@ p {
 	clear: both;
 }
 .screen{
-	padding:200px 0;
+	padding:30px 0;
 }
 .btn{	
 	text-decoration: none;
@@ -76,7 +76,7 @@ p {
 	float:left;
 	width:34px;
 	height: 34px;
-	margin: 56.5px 0 56.5px 0;
+	margin: 56px 0 56px 0;
 	background:url(../images/logo.png) center no-repeat;
 	background-size: contain;
 }
@@ -117,7 +117,7 @@ p {
 }
 .adress{
 	float: right;
-	padding: 30px 0 30px 48px;
+	padding: 30px 0 12px 50px;
 	margin: 0;
 	border-left: 1px solid #ebebeb;
 }
