@@ -28,6 +28,7 @@ p {
 	padding: 0 50px;
 
 }
+.row:after,
 .clearfix:after,
 .contacts:after,
 .container:after{
@@ -37,6 +38,14 @@ p {
 }
 .screen{
 	padding:180px 0;
+}
+.col-1{
+	float: left;
+	width:55%;
+}
+.col-2{
+	float: left;
+	width:45%;
 }
 .btn{	
 	text-decoration: none;
@@ -143,6 +152,7 @@ p {
 
 /*end header*/
 
+/*begin screen_splash*/
 .screen._splash{
 	background: url(../images/screen.png) 60% 70% fixed;
 	background-size: cover;
@@ -162,7 +172,7 @@ p {
 	z-index: 6;
 	text-align: center;
 }
-.vertical{
+.place{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -226,3 +236,37 @@ p {
 	color: #fff;	
 	padding: 18px 18px 18px 18px;
 }
+/*end screen_splash*/
+
+/*begin screen_services*/
+.screen.__service{
+  position:relative;
+  min-height: 530px;
+  max-height: 780px;
+}
+
+.screen.__service .row{
+  	position:relative;
+  	height:100%;
+  	z-index: 9;
+}
+
+.place{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.screen._services .webhost{
+	color: #fff;
+	background: #202242;
+	height:100%;
+	text-align: left;
+}
+.screen._services .domain{
+	color: #fff;
+	background: #ffe13e;
+	height:100%;
+	text-align: left;
+}
+/*Робиться відступ від screen_splash до screen_services*/
+/*end screen_services*/
