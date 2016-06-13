@@ -3,7 +3,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color:#adadad;
-	margin:150px 0 0 0;
+	margin:147px 0 0 0;
 }
 @font-face {
     font-family: Rockwell;
@@ -36,7 +36,7 @@ p {
 	clear: both;
 }
 .screen{
-	padding:30px 0;
+	padding:180px 0;
 }
 .btn{	
 	text-decoration: none;
@@ -53,11 +53,7 @@ p {
 	background:#202242;
 	color:#ffe13e;
 }
-.verticalc{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
+
 /*end main styles*/
 
 /*begin header*/
@@ -154,7 +150,6 @@ p {
 	position: relative;
 	font-size: 30px;
 	line-height: 30px;	
-	min-height: 430px;
 }
 .screen._splash .opacity{
 	background: rgba(0, 0, 0, 0.3);
@@ -167,6 +162,11 @@ p {
 	z-index: 6;
 	text-align: center;
 }
+.vertical{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
 .screen._splash .icon{
 	display: inline-block;
 	width:92px;
@@ -177,7 +177,7 @@ p {
 }
 
 .screen p {
-    font-family: "Raleway";
+    font-family: "Lato";
     font-weight: 300;
     font-size: 30px;
     color: #fff;
