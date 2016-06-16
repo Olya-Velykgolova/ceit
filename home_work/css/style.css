@@ -1,5 +1,6 @@
 /*begin main styles*/
 body{
+	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	color:#adadad;
 	margin:147px 0 0 0;
@@ -22,17 +23,16 @@ p {
 	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
-	padding: 5px 0;
+	margin: 15px 5px 15px 5px;
 	color: #202242
 }
-
+.screen{
+	position: relative;
+}
 .container{
 	width:1170px;
 	margin: 0 auto;
 	padding: 0 50px;
-	z-index: 6;
-
-
 }
 .row:after,
 .clearfix:after,
@@ -42,9 +42,7 @@ p {
 	content: "";
 	clear: both;
 }
-.screen{
-	padding:180px 0;
-}
+
 .center{
 		text-align: center;
 }
@@ -93,8 +91,8 @@ p {
 	color: #202242;
 	font-size: 30px;
 	line-height: 30px;
-	padding: 58px 0; 
-	margin: 0 100px 0 0;
+	/*padding: 58px 0;*/ 
+	margin: 58px 100px 59px 0;
 }
 .header .nav{
 	float:left;
@@ -123,14 +121,14 @@ p {
 }
 .adress{
 	float: right;
-	padding: 30px 0 14px 50px;
+	padding: 30px 0 19px 50px;
 	margin: 0;
 	border-left: 1px solid #ebebeb;
 }
 
 .contacts{
 	float: right;
-	padding: 5px 5px 5px 0;
+	margin: 5px 5px 5px 5px;
 }
 
 .header .btn{
@@ -152,47 +150,35 @@ p {
 
 /*end header*/
 
+
 /*begin screen_splash*/
 .screen._splash{
- 	position:relative;
- 	height:calc(100vh - 147px);
-	background: url(../images/screen.png) fixed;
+	background: url(../images/screen.png) center fixed;
 	background-size: cover;
- 	background-size:cover;
- 	min-height: 530px;
- 	max-height: 780px;
+	position: relative;
+	font-size: 30px;
+	line-height: 30px;	
 }
-.screen._splash .container{
-	position:relative;
-	height:100%;
- 	z-index: 2;
-}
-.screen._splash .opacity {
+.screen._splash .opacity{
 	background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 5;
 }
-.splash-web-info {
- 	position:absolute;
- 	text-align: center;
- 	margin: 0 auto 0 auto;
- 	padding: 20px 0;
- 	height:100%;
- 	width:calc(100% - 100px);
- 	background-size:cover;
+.screen._splash .container{	
+	height: 100vh;	
+	min-height: 768px;
+    max-height: 1000px;    
+    padding-bottom: 30px;
 }
-.screen p {
+.screen._splash p {
     font-family: "Lato";
     font-weight: 300;
     font-size: 30px;
     color: #fff;
     margin: 0 0 42px 0;
 }
-.screen .container h1{
+.screen._splash h1{
 	font-size: 45px;
 	color: white;
 	text-align: center;
@@ -200,59 +186,82 @@ p {
 	font-family: 'Rockwell';
 	font-weight: lighter;
 	letter-spacing: 1px;
-	
 }
-.screen._splash .icon {
- 	display: inline-block;
-	width:92px;
-	height:100px;
+.screen._splash .web-info{    
+    padding: 147px 0 0 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	color: #fff;
+	z-index: 6;
+	text-align: center;
+}
+.screen._splash .icon{
+	display: inline-block;
+	width: 92px;
+	height: 100px;
 	background: url(../images/shape.png) no-repeat;
 	background-size: contain;
 	margin: 60px 0 0 0;
 }
-
-.screen._splash form.info{
-	border:solid 19px #dddddd;
+.screen._splash form.domain{
+	border: solid 19px #dddddd;
 	display: inline-block;
 	margin: 60px 0 0 0;	
 	font-size: 18px;
 	line-height: 18px;
 }
-.screen._splash form.info .form-control{
+.screen._splash form.domain .form-control{
 	float: left;
 }
-.screen._splash form.info input{
-	padding: 18px 47px 17px 18px;
-	color:#000;
-	border: 0;
-}
-.screen._splash form.info select{
-	border: 0;
-	border-radius: 0;
-	background: #ffe13e;
+.screen._splash form.domain input{
+	padding: 0 47px 0 30px;
 	color: #000;
-	font-weight: bold;
-	padding: 18px 18px 15px 18px;
+	border: 0;
+	height: 55px;
 }
-.screen._splash form.info button{
+.screen._splash form.domain select{
+	font-size: 18px;
+    line-height: 18px;
+    -webkit-appearance: none;
+    background-color: #ffe13e;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 0;
+    height: 55px;
+    padding: 0 47px 0 24px;
+    text-indent: 0.01px;
+}
+.screen._splash form.domain .arrow-down{
+	position: relative;
+}
+.screen._splash form.domain .arrow-down:after{
+	content: '';
+	position: absolute;
+    border: 8px solid transparent;
+    border-top: 8px solid #2d2d2d;
+    right: 19px;
+    top: 25px;
+}
+.screen._splash form.domain button{
 	font-size: 14px;
 	line-height: 14px;
 	font-weight: bold;
 	border: 0;
 	border-left: 1px solid #fff;
-	background:#ffe13e;
-	color: #fff;	
-	padding: 18px 18px 18px 18px;
+	background: #ffe13e;
+	color: #fff;
+	height: 55px;
+	padding: 0 19px 0 19px;
 }
 /*end screen_splash*/
 
 /*begin screen_services*/
 .screen__services{
-		position: relative;
-		margin: 0;
-		padding: 0;
-
-	}
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
 .side_bg {
 	position: absolute;
 	z-index: 1;
@@ -286,6 +295,7 @@ p {
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 0 84px;
+	z-index: 8;
 }
 .screen__services .web_icon{
 	display: block;
@@ -293,7 +303,7 @@ p {
 	width: 169px;
 	height: 169px;
 	margin: 0 auto;
-	margin-bottom: 55px; 
+	margin-bottom: 55px;
 }
 .screen__services .dom_icon{
 	display: block;
