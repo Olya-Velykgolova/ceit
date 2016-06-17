@@ -19,13 +19,6 @@ h2{
 	margin: 0;
 	padding: 0;
 }
-p {
-	font-size: 12px;
-	font-weight: bold;
-	text-decoration: none;
-	margin: 15px 5px 15px 5px;
-	color: #202242
-}
 .screen{
 	position: relative;
 }
@@ -45,6 +38,10 @@ p {
 
 .center{
 		text-align: center;
+}
+.col{
+	float: left;
+ 	width: 25%;
 }
 .btn{	
 	text-decoration: none;
@@ -124,6 +121,13 @@ p {
 	padding: 30px 0 19px 50px;
 	margin: 0;
 	border-left: 1px solid #ebebeb;
+}
+.adress p {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 15px 5px 15px 5px;
+	color: #202242
 }
 
 .contacts{
@@ -237,11 +241,18 @@ p {
 }
 .screen._splash form.domain .arrow-down:after{
 	content: '';
-	position: absolute;
-    border: 8px solid transparent;
-    border-top: 8px solid #2d2d2d;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     right: 19px;
-    top: 25px;
+    top: 20px;
 }
 .screen._splash form.domain button{
 	font-size: 14px;
@@ -297,9 +308,19 @@ p {
 	padding: 0 84px;
 	z-index: 8;
 }
+.screen__services .webhost_service p{
+	font-family: "Lato";
+	font-size: 14px;
+	line-height: 24px;
+}
+.screen__services .domain_sevice p{
+	font-family: "Lato";
+	font-size: 14px;
+	line-height: 24px;
+}
 .screen__services .web_icon{
 	display: block;
-	background: url('../img/services.png') no-repeat center;
+	background: url('../images/services.png') no-repeat center;
 	width: 169px;
 	height: 169px;
 	margin: 0 auto;
@@ -337,6 +358,77 @@ p {
 	transition: background .5s ease,
 	color .5s ease;
 }
-
-
 /*end screen_services*/
+
+/*begin screen_features*/
+.srceen._features{
+	background: url('../images/features.png') #fbf8f1 no-repeat center;
+	background-size: contain;
+}
+.srceen._features .container{
+	text-align: center;
+	padding: 30px 35px;
+	text-align: center;
+}
+.srceen._features .screen-heading{	
+	margin: 0;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight:bold;
+	color: #202242;
+	font-family: 'Raleway', sans-serif;
+}
+.srceen._features .screen-subheading{
+	font-size: 24px;
+	line-height: 24px;
+	color: #202242;
+	font-family: 'Lato', sans-serif;
+}
+.srceen._features .icon{
+	display: block;
+	margin: 0 auto;
+	height: 130px;
+	width: 130px;	
+}
+.srceen._features .icon_after:after{
+	display: inline-block;
+	left: 50%;
+	content: '';
+	margin: 29px 0;
+	width: 70px;
+	border: 1px solid #8d8d99;
+}
+.srceen._features .icon.support{
+	background: url(../images/support.png) no-repeat center;	
+	background-size: contain;
+}
+.srceen._features .icon.tech{
+	background: url(../images/tech.png) no-repeat center;	
+	background-size: contain;
+}
+.srceen._features .icon.database{
+	background: url(../images/database.png) no-repeat center;
+	background-size: contain;
+}
+.srceen._features .icon.monitor{
+	background: url(../images/monitor.png) no-repeat center;
+	background-size: contain;
+}
+.srceen._features .block-heading{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	color: #f4d320;
+	margin: 0;
+}
+.srceen._features .descript-features{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #202242;
+	margin: 19px 30px;
+}
+.srceen._features .wrap{
+	margin: 60px 0;
+}
+/*end screen_features*/
