@@ -1,0 +1,127 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (extra small devices, 468x and up) */
+@media (min-width: 400px) and (max-width: 684px) {
+.adress{display: none;}
+.header a, .header a:hover, .header a:focus {font-size: 20px; line-height: 20px;}
+.header .nav li a {display: none;}
+.screen.__splash {padding: 90px 0 0 0;}
+h2 {font-size: 30px;}
+.screen.__splash p {font-size: 24px;}
+.icon-circle {background-size: 96px 105px;}
+.splash-domain {margin: 28px 0 0 0;}
+.splash-domain form {border: 10px solid #ddd;}
+.splash-domain input[type=text], .splash-domain select.input-select, .splash-domain .style-select, .btn-domain
+ {height: 36px;font-size: 14px; line-height: 14px;width:100%;}
+.btn-domain  {padding: 0;border-left:0; border-top:1px solid white;}
+.btn-domain:hover, .btn-domain:focus {border-left: 1px solid white; border-top:1px solid white; transition: none;}
+.splash-domain .style-select::after {right: 16px; top: 12px; height: 8px; width: 8px;}
+.screen.__features .content {margin: 0 0 55px 0;}
+.screen.__features p.light-text {font-size: 14px; line-height: 24px; margin: 0 70px 0 70px;}
+.screen.__service .content {margin: 50px 40px 40px 40px;}
+.screen.__service .color.blue {background: #202242; height: calc(100% - 50%);}
+.screen.__service .color.yellow {background: #ffe13e; height:100%;}
+.screen.__service .color {position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 5; width: 100%;}
+.splash-domain select.input-select {padding: 0 35px 0 23px;}
+.screen.__clients a img {height: 95px; width: 130px; margin: 20px 0 0 0;}
+.screen.__clients .client-descript {padding: 0px 15px 15px 15px;}
+.screen.__clients .container {padding: 57px 0 0 0;}
+.screen.__clients h2, .screen.__pricing h3, .screen.__pricing p  {text-align: center;}
+.screen.__pricing .content {margin: 0 0 0 15px;}
+.screen.__pricing .btn-more {padding: 24px 40px;}
+.screen.__pricing h3 {font-size: 24px;}
+.screen.__pricing p {font-size: 14px; margin: 0 0 20px 0;}
+.screen.__pricing .btn-more {padding: 20px 28px; font-size: 16px; line-height: 16px;}
+.screen.__clients a img {height: 70px; width: 95px; margin: 20px 0 0 0;}
+.hidden-my, .footer .icon-maps, p.name-maps{display: none;}
+.footer li {text-align: center;}
+.footer a { margin:0 20px 0 20px;}
+.footer {min-height: 0;}
+.footer .content { margin-top:2%; float: none;}
+.footer .social {padding: 15px 20px 0 0; text-align: right;}
+footer li.nav {border: none; margin: -8px 0 10px 0; font-size: 22px;}
+}
+
+/* Small devices (768px) */
+@media (min-width: 685px) and (max-width: 768px) {
+.adress{display: none;}
+ .header .logo .text {margin: 58px 10px 58px 0;}
+.header a, .header a:hover, .header a:focus {font-size: 26px; line-height: 26px;}
+.header .nav li a {display: none;}
+.screen.__splash {padding: 70px 0 0 0;}
+h2 {font-size: 30px;}
+.screen.__splash p {font-size: 24px;}
+.icon-circle {background-size: 96px 105px;}
+.splash-domain {margin: 28px 0 0 0;}
+.splash-domain form {border: 10px solid #ddd;}
+.splash-domain input[type=text], .splash-domain select.input-select, .splash-domain .style-select,
+.btn-domain  {height: 36px;font-size: 14px; line-height: 14px;width:100%;}
+.btn-domain  {padding: 0;border-left:0; border-top:1px solid white;}
+.btn-domain:hover, .btn-domain:focus {border-left: 1px solid white; border-top:1px solid white; transition: none;}
+.splash-domain .style-select::after {top: 10px;}
+.screen.__features .content {margin: 0 0 55px 0;}
+.screen.__service .content {margin: 50px 40px 40px 40px;}
+.screen.__service .color.blue {background: #202242; height: calc(100% - 50%);}
+.screen.__service .color.yellow {background: #ffe13e; height:100%;}
+.screen.__service .color {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 5; width: 100%;}
+.splash-domain select.input-select {padding: 0 40px 0 24px;}
+.screen.__clients a img {height: 95px; width: 130px; margin: 20px 0 0 0;}
+.screen.__clients .client-descript {padding: 0px 15px 15px 15px;}
+.screen.__pricing .content {margin: 0 0 0 15px;}
+.screen.__pricing .btn-more {padding: 24px 40px;}
+.screen.__pricing h3 {font-size: 24px;}
+.screen.__pricing p {font-size: 14px; margin: 0 0 30px 0;}
+.screen.__clients h2, .screen.__pricing h3, .screen.__pricing p  {text-align: center;}
+.screen.__pricing .btn-more { padding: 20px 28px; font-size: 16px; line-height: 16px;}
+.hidden-my, .footer .icon-maps, p.name-maps{display: none;}
+.footer li {text-align: center;}
+.footer a { margin:0 20px 0 20px;}
+.footer {min-height: 0;}
+.footer .content { margin-top:2%; float: none;}
+.footer .social {padding: 15px 20px 0 0; text-align: right;}
+footer li.nav {border: none; margin: -8px 0 10px 0; font-size: 22px;}
+}
+
+/* Medium devices (992px) */
+@media (min-width: 767px) and (max-width: 992px){
+.adress{display: none;}
+.header .logo {margin: 30px 0 30px 0;}
+.header .nav {margin: 40px 0 32px 40px;}
+.screen.__splash {padding: 60px 0 0 0;}
+.screen.__features .content {margin: 0 0 55px 0;}
+h2 {font-size: 38px;}
+.screen.__clients h2{text-align: center;}
+.screen.__pricing h3 {font-size: 24px;}
+.splash-domain {margin: 28px 0 0 0;}
+.screen.__clients .container {padding: 77px 0 0 0;}
+.screen.__clients .client-descript {padding: 0px 15px 15px 15px;}
+.screen.__pricing .content {margin: 0 0 0 15px;}
+.screen.__pricing .btn-more {padding: 24px 40px;}
+p.name-maps {font-size: 14px;}
+.screen.__clients a img {height: 105px; width: 145px; margin: 20px 0 0 0;}
+.screen.__service .color.blue {background: #202242; height: calc(100% - 50%);}
+.screen.__service .color.yellow {background: #ffe13e; height:100%;}
+.screen.__service .color {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 5; width: 100%;}
+.footer .icon-maps, p.name-maps{display: none;}
+.footer li {text-align: center;}
+.footer a { margin:0 20px 0 20px;}
+.footer {min-height: 0;}
+.footer .content { margin-top:2%; float: none;}
+.footer .social {padding: 15px 20px 0 0; text-align: right;}
+footer li.nav {border: none; margin: -8px 0 10px 0; font-size: 22px;}
+}
+
+/* devices (992px) */
+@media (min-width: 993px) and (max-width: 1199px) {
+.adress{display: none;}
+.header .logo {margin: 30px 0 30px 0;}
+.header .nav {margin: 40px 0 32px 65px;}
+.screen.__service .content {margin: 90px 40px 40px 40px;}
+.screen.__pricing h3 {font-size: 30px;}
+.screen.__features .content {margin: 0 0 55px 0;}
+.screen.__pricing .content {margin: 0 0 0 60px;}
+.screen.__pricing .btn-more {padding: 31px 30px;}
+p.name-maps {font-size: 16px;}
+.screen.__clients a img {height: 95px; width: 130px; margin: 20px 0 0 0;}
+}
